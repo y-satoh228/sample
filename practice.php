@@ -11,7 +11,7 @@
 <?php
  $hello = "Hello,";
  $name = "ユウキ";
- $world = "s World!";
+ $world = "'s World!";
  echo $hello . $name . $world ;
 ?>
 
@@ -36,6 +36,6 @@ $calender_2018 = [
   "November" => "11月",
   "December" => "12月"
 ];
- echo $calender_2018 ["August"]; 
+ echo $calender_2018 ["December"]; 
 
 ?>
