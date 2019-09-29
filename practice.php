@@ -41,11 +41,11 @@ $calender_2018 = [
 ?>
 
 <?php
-  $name = "ゆうき";
-  if($name =="ゆう") {
+  $name = "ゆう";
+  if($name =="ゆうき") {
       echo "私は{$name}です";
   }else{
-      echo "あなたの名前ではありません";
+      echo "{$name}ではありません";
       echo "\n";
   }
 
@@ -53,7 +53,7 @@ $calender_2018 = [
 <?php
   $total = 0;
   
-  for($i = 0; $i <= 10000; $i++) {
+  for($i = 1; $i <= 10000; $i++) {
       $total += $i;
   }
   echo $total;
@@ -61,10 +61,11 @@ $calender_2018 = [
 
 <?php
   $fruits = array("apple","orange","peach","mango","berry");
-  foreach($fruits as $fruits) {
-  echo $fruits;
+  foreach($fruits as $fruit) {
+  echo $fruit;
   echo "\n";
   }
+  print_r($fruits);
 ?>
 <?php
   $start = 1;
@@ -77,3 +78,42 @@ $calender_2018 = [
   }
 }
 ?>
+
+<?php
+  function sum($result) {
+      echo $result * 2;
+  }
+     sum(2);
+?>
+
+<?php
+  function f($a,$b) {
+      echo $a + $b;
+  }
+     f(2,3);
+?>
+
+<?php
+  function ar($arr) {
+      $total = 1;
+      foreach($arr as $a) {
+      $total *= $a;
+      }
+      echo $total;
+  }
+      ar(array(1,3,5,7,9));
+    echo "\n";
+?>
+<?php
+  function max_array($arr) {
+      $max_number =$arr[0];
+      foreach($arr as $a) {
+          if($max_number < $a){
+             $max_number = $a;
+          }
+      }
+      return $max_number;
+  }
+     echo max_array(array(1,2,9,4,5));
+?>
+
