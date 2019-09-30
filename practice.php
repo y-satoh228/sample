@@ -117,3 +117,38 @@ $calender_2018 = [
      echo max_array(array(1,2,9,4,5));
 ?>
 
+<?php
+$text = "<p>はじめまして</p>";
+echo strip_tags($text);
+echo "\n";
+
+?>
+
+<?php
+  $fruits = array("apple","orange","peach");
+  array_push($fruits,"mango","grape");
+  print_r($fruits);
+?>
+
+<?php
+  $value1 = array(1,2,3);
+  $value2 = array(4,5,6);
+  $value = array_merge($value1,$value2);
+  print_r($value);
+?>
+
+<?php
+  echo date("Y/m/d H:i:s",mktime(0,0,0,9,30,2019));
+
+?>
+
+<?php
+  $date = time();  
+  echo  $date;
+  echo "\n";
+?>
+
+<?php
+  echo date("Y年m月d日 H時i分s秒");
+
+?>
